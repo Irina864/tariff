@@ -1,0 +1,57 @@
+.tariff {
+    background-color: rgb(79, 79, 79);
+    height: 500px;
+    display: grid;
+    grid-template-rows: 20% 50% 10% 20%;
+    .text {
+        border: 0.3px solid white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tariff__name {
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        border: 0.3px solid white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tariff__cost {
+        justify-content: space-around;
+        padding: 0 20px;
+        font-size: 70px;
+        font-weight: 700;
+        color: white;
+        border: 0.3px solid white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tariff__unit {
+        font-weight: 400;
+        font-size: medium;
+    }
+    .tariff__force {
+        color: rgb(85, 84, 84);
+        font-size: large;
+        font-weight: 600;
+        background-color: rgb(238, 238, 238);
+    }
+    .tariff__traffic {
+        padding-right: 40px;
+        padding-left: 40px;
+        color: rgb(95, 95, 95);
+        font-size: large;
+        font-weight: 600;
+        background-color: rgb(231, 231, 231);
+    }
+}
+.bigger {
+    height: 540px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
