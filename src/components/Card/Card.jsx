@@ -1,15 +1,18 @@
+import React, { useState } from 'react';
 import './Card.css';
 
 function Card(props) {
     const theme = props.theme;
     const nameClass = `${theme.name} tariff__name `;
     const costClass = `${theme.cost} tariff__cost `;
+    const [checked, setChecked] = useState(false);
     let tarriffClass;
-    Number(props.cost === 550)
-        ? (tarriffClass = 'tariff bigger')
-        : (tarriffClass = 'tariff');
+    const handleChange = () => {
+        setChecked(!checked);
+    };
+    checked ? (tarriffClass = 'tariff checked') : (tarriffClass = 'tariff');
     return (
-        <div className={tarriffClass}>
+        <div className={tarriffClass} checked={checked} onClick={handleChange}>
             <div className={nameClass}>{props.name}</div>
             <div className={costClass}>
                 {props.cost} <span className="tariff__unit"> руб/мес</span>
